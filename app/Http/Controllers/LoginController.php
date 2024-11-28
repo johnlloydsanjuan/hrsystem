@@ -11,6 +11,10 @@ class LoginController extends Controller
     }
 
     public function loginProcess(){
-        
+
+    }
+
+    public function logout(){
+        return redirect('/');
     }
 }

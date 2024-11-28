@@ -16,6 +16,21 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
     <script src="{{ asset('js/jquery-3.7.1.min.js') }}"></script>
+    <script>
+        $(window).resize(function() {
+            let width = $(window).width();
+            if (width < 992) {
+                $('#sidebar').hide();
+                $(".nav-item").show();
+                $(".navbar-secondary-text").hide();
+            } else {
+                $('#sidebar').show();
+                $(".nav-item").hide();
+                $(".navbar-secondary-text").show();
+            }
+        });
+        $(window).resize();
+    </script>
     @stack('scripts')
 </body>
 
