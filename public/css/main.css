@@ -23,7 +23,7 @@
 }
 
 .main {
-    min-height: calc(100vh - 104px) ;
+    min-height: calc(100vh - 104px);
     width: 100%;
     overflow: hidden;
     background-color: #fff;
@@ -35,20 +35,19 @@
     z-index: 200;
 }
 
-.navbar-collapse{
+.navbar-collapse {
     background-color: #c5a3ffa8;
 }
 
-.navbar-logo{
-    font-family: 'Lobster';
-    font-size: 40px;
-    font-weight: 600;
-    text-decoration: none;
-    color: #444444;
+.navbar-logo {
     padding: 0 20px;
 }
 
-.navbar-secondary-text{
+.navbar-logo img {
+    height: 50px;
+}
+
+.navbar-secondary-text {
     font-size: 17px;
     font-weight: 600;
     text-decoration: none;
@@ -56,12 +55,12 @@
     margin: 0;
 }
 
-.nav-item a{
+.nav-item a {
     color: #444444;
     font-weight: 600;
 }
 
-.navbar-end-links a{
+.navbar-end-links a {
     color: #444444;
     font-size: 20px;
 }
@@ -75,7 +74,7 @@
     background: #6A4CA8;
 }
 
-.sidebar-nav{
+.sidebar-nav {
     list-style: none;
     padding: 20px 0;
 }
@@ -90,13 +89,14 @@ a.sidebar-link {
     border-left: 3px solid transparent;
     transition: all ease-in-out 0.3s;
 }
+
 a.sidebar-link:hover {
     font-size: 17px;
     background-color: #d3b9ffa9;
     padding: 15px 30px;
 }
 
-a.sidebar-link.active{
+a.sidebar-link.active {
     font-size: 17px;
     font-weight: 700;
     padding-left: 30px;
@@ -106,4 +106,37 @@ a.sidebar-link.active{
 .sidebar-link i {
     font-size: 17px;
     margin-right: 7px;
+}
+
+/* TABLE CUSTOMIZATION */
+.customized-table {
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.customized-table thead {
+    background-color: #C5A3FF;
+    color: #444444;
+}
+
+.customized-table thead th {
+    padding: 10px;
+    text-align: left;
+}
+
+.customized-table tbody tr {
+    transition: all ease-in-out 0.2s;
+    border-bottom: 1px solid #c5a3ff79;
+    cursor: pointer;
+}
+
+.customized-table tbody tr:hover {
+    background-color: #ffc0cba9;
+    color: #FFFFFF;
+}
+
+.customized-table tbody td {
+    padding: 8px 10px;
+    color: #444444;
 }

@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid d-flex p-0">
-        <a class="navbar-logo" href="/master/dashboard">San1</a>
+        <a class="navbar-logo" href="/master/dashboard"><img src="{{ asset('images/San1-logo.png') }}" alt=""></a>
         <p class="navbar-secondary-text">Human Resource System</p>
         <button class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarNav" type="button"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

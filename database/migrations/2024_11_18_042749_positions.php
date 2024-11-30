@@ -11,7 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        //
+        Schema::create('positions', function(Blueprint $table){
+            $table->bigIncrements('id');
+            $table->string('name');
+            $table->longText('description')->nullable();
+            $table->timestamps();
+        });
     }
 
     /**
